@@ -1,10 +1,3 @@
-import sys
-
-# sys.setrecursionlimit(10 ** 6)
-
-# input = sys.stdin.readline
-
-
 def dfs(v, p):
     global closed_path
 
