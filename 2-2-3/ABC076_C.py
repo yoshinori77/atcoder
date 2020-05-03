@@ -3,7 +3,6 @@ T = input()
 t = len(T)
 
 for i in range(len(S)-t, -1, -1):
-    print(i)
     for j in range(t):
         k = S[i+j]
         if k != T[j] and k != "?":
