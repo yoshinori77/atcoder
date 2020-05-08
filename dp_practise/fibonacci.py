@@ -1,7 +1,8 @@
-import time
-from contextlib import contextmanager
 import argparse
 import sys
+import time
+from contextlib import contextmanager
+
 sys.setrecursionlimit(10**9)
 
 
@@ -53,8 +54,8 @@ if __name__ == "__main__":
     parser.add_argument("max_num", help="Set max number")
     args = parser.parse_args()
 
-    N = int(args.max_num)
-    done = [False] * (N + 1)
-    memo = [0] * (N + 1)
+    n = int(args.max_num)
+    done = [False] * (n + 1)
+    memo = [0] * (n + 1)
     with timer():
-        print(eval(args.method)(N))
+        print(eval(args.method)(n))
